@@ -9,8 +9,8 @@ library(dplyr)
 # Import Data
 readYear <- function() {
   
-  #Create a prompt for user to enter fiscal year
-  FY <- readline(prompt = "Please enter an fiscal year(Ex 2015): ")
+  #Create a prompt for user to enter what year of data to import
+  FY <- readline(prompt = "Please enter the year of data to import(Ex 2015): ")
   FY <- as.integer(FY)
   
  }
