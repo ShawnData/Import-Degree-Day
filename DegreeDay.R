@@ -16,12 +16,13 @@ readYear <- function() {
  }
 
 if(interactive()) FY <- readYear()
-  #Error control
+  
+ #Error control
 while(FY < 999 || is.na(FY)){
   FY <- readYear()
   }
 
-  #Create URL
+#Create URL
   CoolingURL <- paste("ftp://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/", 
                     FY, "/ClimateDivisions.Cooling.txt", sep = "")
   HeatingURL <- paste("ftp://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/", 
@@ -50,8 +51,8 @@ while(FY < 999 || is.na(FY)){
     summarise(Days = sum(Days)) %>%
     spread(Date, Days)
   
-  
-exportData <- readline(prompt = "Save data[Y/N]?: ")
+#Create a prompt to ask user if they want to save it or not 
+  exportData <- readline(prompt = "Save data[Y/N]?: ")
 
 if(grepl("^[Y-y]",exportData)) {
   
