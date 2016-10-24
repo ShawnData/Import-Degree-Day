@@ -1,2 +1,2 @@
 # Import-Degree-Day
-Get data from Climate Prediction Center and process it for Sightlines' Degree Day Template
+Get US degreed days from Climate Prediction Center and format it in a way that can be used for Sightlines' Degree Day Template. 
