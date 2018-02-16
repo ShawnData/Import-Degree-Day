@@ -57,7 +57,7 @@ while(FY < 999 || is.na(FY)){
 if(grepl("^[Y-y]",exportData)) {
   
   # Export Data
-  setwd("C:/Users/sli/Desktop")
+  # setwd("C:/Users/sli/Desktop")
   write.csv(ClimateDivisions.Cooling, "ClimateDivisions.Cooling.csv", row.names = F)
   write.csv(ClimateDivisions.Heating, "ClimateDivisions.Heating.csv", row.names = F)
 
